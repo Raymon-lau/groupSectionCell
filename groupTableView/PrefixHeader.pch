@@ -1,0 +1,21 @@
+//
+//  PrefixHeader.pch
+//  groupTableView
+//
+//  Created by Raymon on 2018/8/4.
+//  Copyright © 2018年 Raymon. All rights reserved.
+//
+
+#import <Masonry/Masonry.h>
+
+#import "UIColor+Additions.h"
+#import "UIFont+Additions.h"
+#import "UILabel+Masonry.h"
+#import "UIButton+Masonry.h"
+#import "UIImageView+Masonry.h"
+#import "UIView+Masonry.h"
+
+#define IOS9 ([[[UIDevice currentDevice]systemVersion]doubleValue]>=9.0)
+#define WEAKSELF __weak typeof(self) weakSelf = self;
+#define STRONGSELF __strong typeof(weakSelf) strongSelf = weakSelf;
+#define iPhoneX CGSizeEqualToSize(CGSizeMake(375, 812), [[UIScreen mainScreen] bounds].size)

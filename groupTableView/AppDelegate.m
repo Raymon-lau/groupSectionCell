@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "RMMyProjectController.h"
 
 @interface AppDelegate ()
 
@@ -17,6 +18,12 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
+
+    AppDelegate *newDelegate = [[UIApplication sharedApplication] delegate];
+    RMMYProjectController *vc = [[RMMYProjectController alloc] init];
+    newDelegate.window.rootViewController = vc;
+    [newDelegate.window makeKeyAndVisible];
+    
     return YES;
 }
 

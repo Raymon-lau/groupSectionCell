@@ -7,14 +7,29 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		107299DB9BB96CB10DABED9E /* libPods-groupTableView.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 23B426449F9DF7E7BDD8B4B0 /* libPods-groupTableView.a */; };
 		7C5BA440211548D800A53494 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA43F211548D800A53494 /* AppDelegate.m */; };
-		7C5BA443211548D800A53494 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA442211548D800A53494 /* ViewController.m */; };
 		7C5BA446211548D800A53494 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5BA444211548D800A53494 /* Main.storyboard */; };
 		7C5BA448211548D900A53494 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7C5BA447211548D900A53494 /* Assets.xcassets */; };
 		7C5BA44B211548D900A53494 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7C5BA449211548D900A53494 /* LaunchScreen.storyboard */; };
 		7C5BA44E211548D900A53494 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA44D211548D900A53494 /* main.m */; };
 		7C5BA458211548D900A53494 /* groupTableViewTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA457211548D900A53494 /* groupTableViewTests.m */; };
 		7C5BA463211548D900A53494 /* groupTableViewUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA462211548D900A53494 /* groupTableViewUITests.m */; };
+		7C5BA483211548EE00A53494 /* RMMYProjectUI.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA473211548ED00A53494 /* RMMYProjectUI.m */; };
+		7C5BA484211548EE00A53494 /* RMMyProjectViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA474211548ED00A53494 /* RMMyProjectViewModel.m */; };
+		7C5BA485211548EE00A53494 /* RMMyProjectEntity.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA478211548ED00A53494 /* RMMyProjectEntity.m */; };
+		7C5BA487211548EE00A53494 /* RMMyProjectTopView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA47B211548ED00A53494 /* RMMyProjectTopView.m */; };
+		7C5BA489211548EE00A53494 /* RMMyProjectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA482211548ED00A53494 /* RMMyProjectController.m */; };
+		7C5BA48C2115492600A53494 /* RMGroupShadowTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA48B2115492600A53494 /* RMGroupShadowTableView.m */; };
+		7C5BA49C211572DE00A53494 /* UILabel+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA48E211572DE00A53494 /* UILabel+Masonry.m */; };
+		7C5BA49D211572DE00A53494 /* UIImageView+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA491211572DE00A53494 /* UIImageView+Masonry.m */; };
+		7C5BA49E211572DE00A53494 /* UITextField+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA492211572DE00A53494 /* UITextField+Masonry.m */; };
+		7C5BA49F211572DE00A53494 /* UIScrollView+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA494211572DE00A53494 /* UIScrollView+Masonry.m */; };
+		7C5BA4A0211572DE00A53494 /* UIButton+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA496211572DE00A53494 /* UIButton+Masonry.m */; };
+		7C5BA4A1211572DE00A53494 /* UIView+Masonry.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA499211572DE00A53494 /* UIView+Masonry.m */; };
+		7C5BA4A2211572DE00A53494 /* KDCustombutton.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA49B211572DE00A53494 /* KDCustombutton.m */; };
+		7C5BA4A5211573C500A53494 /* UIColor+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA4A4211573C500A53494 /* UIColor+Additions.m */; };
+		7C5BA4A92115746700A53494 /* UIFont+Additions.m in Sources */ = {isa = PBXBuildFile; fileRef = 7C5BA4A72115746700A53494 /* UIFont+Additions.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,11 +50,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		23B426449F9DF7E7BDD8B4B0 /* libPods-groupTableView.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-groupTableView.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		3991E1000760EE797495236B /* Pods-groupTableView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groupTableView.release.xcconfig"; path = "Pods/Target Support Files/Pods-groupTableView/Pods-groupTableView.release.xcconfig"; sourceTree = "<group>"; };
 		7C5BA43B211548D800A53494 /* groupTableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = groupTableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5BA43E211548D800A53494 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		7C5BA43F211548D800A53494 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		7C5BA441211548D800A53494 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		7C5BA442211548D800A53494 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		7C5BA445211548D800A53494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		7C5BA447211548D900A53494 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		7C5BA44A211548D900A53494 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -51,6 +66,38 @@
 		7C5BA45E211548D900A53494 /* groupTableViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = groupTableViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7C5BA462211548D900A53494 /* groupTableViewUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = groupTableViewUITests.m; sourceTree = "<group>"; };
 		7C5BA464211548D900A53494 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7C5BA472211548ED00A53494 /* RMMyProjectViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMyProjectViewModel.h; sourceTree = "<group>"; };
+		7C5BA473211548ED00A53494 /* RMMYProjectUI.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMYProjectUI.m; sourceTree = "<group>"; };
+		7C5BA474211548ED00A53494 /* RMMyProjectViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMyProjectViewModel.m; sourceTree = "<group>"; };
+		7C5BA475211548ED00A53494 /* RMMyProjectUI.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMyProjectUI.h; sourceTree = "<group>"; };
+		7C5BA477211548ED00A53494 /* RMMyProjectEntity.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMyProjectEntity.h; sourceTree = "<group>"; };
+		7C5BA478211548ED00A53494 /* RMMyProjectEntity.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMyProjectEntity.m; sourceTree = "<group>"; };
+		7C5BA47B211548ED00A53494 /* RMMyProjectTopView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMyProjectTopView.m; sourceTree = "<group>"; };
+		7C5BA47F211548ED00A53494 /* RMMyProjectTopView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMyProjectTopView.h; sourceTree = "<group>"; };
+		7C5BA481211548ED00A53494 /* RMMyProjectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMMyProjectController.h; sourceTree = "<group>"; };
+		7C5BA482211548ED00A53494 /* RMMyProjectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMMyProjectController.m; sourceTree = "<group>"; };
+		7C5BA48A2115492600A53494 /* RMGroupShadowTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RMGroupShadowTableView.h; sourceTree = "<group>"; };
+		7C5BA48B2115492600A53494 /* RMGroupShadowTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RMGroupShadowTableView.m; sourceTree = "<group>"; };
+		7C5BA48E211572DE00A53494 /* UILabel+Masonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Masonry.m"; sourceTree = "<group>"; };
+		7C5BA48F211572DE00A53494 /* UIButton+Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIButton+Masonry.h"; sourceTree = "<group>"; };
+		7C5BA490211572DE00A53494 /* UIScrollView+Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIScrollView+Masonry.h"; sourceTree = "<group>"; };
+		7C5BA491211572DE00A53494 /* UIImageView+Masonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+Masonry.m"; sourceTree = "<group>"; };
+		7C5BA492211572DE00A53494 /* UITextField+Masonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Masonry.m"; sourceTree = "<group>"; };
+		7C5BA493211572DE00A53494 /* UIView+Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Masonry.h"; sourceTree = "<group>"; };
+		7C5BA494211572DE00A53494 /* UIScrollView+Masonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIScrollView+Masonry.m"; sourceTree = "<group>"; };
+		7C5BA495211572DE00A53494 /* UIImageView+Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImageView+Masonry.h"; sourceTree = "<group>"; };
+		7C5BA496211572DE00A53494 /* UIButton+Masonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Masonry.m"; sourceTree = "<group>"; };
+		7C5BA497211572DE00A53494 /* UILabel+Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UILabel+Masonry.h"; sourceTree = "<group>"; };
+		7C5BA498211572DE00A53494 /* UITextField+Masonry.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UITextField+Masonry.h"; sourceTree = "<group>"; };
+		7C5BA499211572DE00A53494 /* UIView+Masonry.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Masonry.m"; sourceTree = "<group>"; };
+		7C5BA49A211572DE00A53494 /* KDCustombutton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KDCustombutton.h; sourceTree = "<group>"; };
+		7C5BA49B211572DE00A53494 /* KDCustombutton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KDCustombutton.m; sourceTree = "<group>"; };
+		7C5BA4A3211573C500A53494 /* UIColor+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Additions.h"; sourceTree = "<group>"; };
+		7C5BA4A4211573C500A53494 /* UIColor+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Additions.m"; sourceTree = "<group>"; };
+		7C5BA4A62115742C00A53494 /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		7C5BA4A72115746700A53494 /* UIFont+Additions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIFont+Additions.m"; sourceTree = "<group>"; };
+		7C5BA4A82115746700A53494 /* UIFont+Additions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIFont+Additions.h"; sourceTree = "<group>"; };
+		BD1AC7C9863F5301BCA549A4 /* Pods-groupTableView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-groupTableView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-groupTableView/Pods-groupTableView.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +105,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				107299DB9BB96CB10DABED9E /* libPods-groupTableView.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +133,8 @@
 				7C5BA456211548D900A53494 /* groupTableViewTests */,
 				7C5BA461211548D900A53494 /* groupTableViewUITests */,
 				7C5BA43C211548D800A53494 /* Products */,
+				C02122C95382A761C541410F /* Pods */,
+				ED9923E235428B8879EE389C /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,11 +151,18 @@
 		7C5BA43D211548D800A53494 /* groupTableView */ = {
 			isa = PBXGroup;
 			children = (
+				7C5BA4A82115746700A53494 /* UIFont+Additions.h */,
+				7C5BA4A72115746700A53494 /* UIFont+Additions.m */,
+				7C5BA4A3211573C500A53494 /* UIColor+Additions.h */,
+				7C5BA4A4211573C500A53494 /* UIColor+Additions.m */,
+				7C5BA49A211572DE00A53494 /* KDCustombutton.h */,
+				7C5BA49B211572DE00A53494 /* KDCustombutton.m */,
+				7C5BA48D211572DE00A53494 /* Masonry */,
+				7C5BA470211548ED00A53494 /* MyProject */,
 				7C5BA43E211548D800A53494 /* AppDelegate.h */,
 				7C5BA43F211548D800A53494 /* AppDelegate.m */,
-				7C5BA441211548D800A53494 /* ViewController.h */,
-				7C5BA442211548D800A53494 /* ViewController.m */,
 				7C5BA444211548D800A53494 /* Main.storyboard */,
+				7C5BA4A62115742C00A53494 /* PrefixHeader.pch */,
 				7C5BA447211548D900A53494 /* Assets.xcassets */,
 				7C5BA449211548D900A53494 /* LaunchScreen.storyboard */,
 				7C5BA44C211548D900A53494 /* Info.plist */,
@@ -132,6 +189,93 @@
 			path = groupTableViewUITests;
 			sourceTree = "<group>";
 		};
+		7C5BA470211548ED00A53494 /* MyProject */ = {
+			isa = PBXGroup;
+			children = (
+				7C5BA471211548ED00A53494 /* viewModel */,
+				7C5BA476211548ED00A53494 /* model */,
+				7C5BA479211548ED00A53494 /* view */,
+				7C5BA480211548ED00A53494 /* viewController */,
+			);
+			path = MyProject;
+			sourceTree = "<group>";
+		};
+		7C5BA471211548ED00A53494 /* viewModel */ = {
+			isa = PBXGroup;
+			children = (
+				7C5BA475211548ED00A53494 /* RMMyProjectUI.h */,
+				7C5BA473211548ED00A53494 /* RMMYProjectUI.m */,
+				7C5BA472211548ED00A53494 /* RMMyProjectViewModel.h */,
+				7C5BA474211548ED00A53494 /* RMMyProjectViewModel.m */,
+			);
+			path = viewModel;
+			sourceTree = "<group>";
+		};
+		7C5BA476211548ED00A53494 /* model */ = {
+			isa = PBXGroup;
+			children = (
+				7C5BA477211548ED00A53494 /* RMMyProjectEntity.h */,
+				7C5BA478211548ED00A53494 /* RMMyProjectEntity.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		7C5BA479211548ED00A53494 /* view */ = {
+			isa = PBXGroup;
+			children = (
+				7C5BA48A2115492600A53494 /* RMGroupShadowTableView.h */,
+				7C5BA48B2115492600A53494 /* RMGroupShadowTableView.m */,
+				7C5BA47F211548ED00A53494 /* RMMyProjectTopView.h */,
+				7C5BA47B211548ED00A53494 /* RMMyProjectTopView.m */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		7C5BA480211548ED00A53494 /* viewController */ = {
+			isa = PBXGroup;
+			children = (
+				7C5BA481211548ED00A53494 /* RMMyProjectController.h */,
+				7C5BA482211548ED00A53494 /* RMMyProjectController.m */,
+			);
+			path = viewController;
+			sourceTree = "<group>";
+		};
+		7C5BA48D211572DE00A53494 /* Masonry */ = {
+			isa = PBXGroup;
+			children = (
+				7C5BA48E211572DE00A53494 /* UILabel+Masonry.m */,
+				7C5BA48F211572DE00A53494 /* UIButton+Masonry.h */,
+				7C5BA490211572DE00A53494 /* UIScrollView+Masonry.h */,
+				7C5BA491211572DE00A53494 /* UIImageView+Masonry.m */,
+				7C5BA492211572DE00A53494 /* UITextField+Masonry.m */,
+				7C5BA493211572DE00A53494 /* UIView+Masonry.h */,
+				7C5BA494211572DE00A53494 /* UIScrollView+Masonry.m */,
+				7C5BA495211572DE00A53494 /* UIImageView+Masonry.h */,
+				7C5BA496211572DE00A53494 /* UIButton+Masonry.m */,
+				7C5BA497211572DE00A53494 /* UILabel+Masonry.h */,
+				7C5BA498211572DE00A53494 /* UITextField+Masonry.h */,
+				7C5BA499211572DE00A53494 /* UIView+Masonry.m */,
+			);
+			path = Masonry;
+			sourceTree = "<group>";
+		};
+		C02122C95382A761C541410F /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BD1AC7C9863F5301BCA549A4 /* Pods-groupTableView.debug.xcconfig */,
+				3991E1000760EE797495236B /* Pods-groupTableView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		ED9923E235428B8879EE389C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				23B426449F9DF7E7BDD8B4B0 /* libPods-groupTableView.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -139,9 +283,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 7C5BA467211548D900A53494 /* Build configuration list for PBXNativeTarget "groupTableView" */;
 			buildPhases = (
+				56620ADF7B025042CA0AC0FB /* [CP] Check Pods Manifest.lock */,
 				7C5BA437211548D800A53494 /* Sources */,
 				7C5BA438211548D800A53494 /* Frameworks */,
 				7C5BA439211548D800A53494 /* Resources */,
+				6958884483617354924B060F /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -257,14 +403,67 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		56620ADF7B025042CA0AC0FB /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-groupTableView-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6958884483617354924B060F /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-groupTableView/Pods-groupTableView-resources.sh",
+				"${PODS_ROOT}/MJRefresh/MJRefresh/MJRefresh.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/MJRefresh.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-groupTableView/Pods-groupTableView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		7C5BA437211548D800A53494 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C5BA443211548D800A53494 /* ViewController.m in Sources */,
+				7C5BA483211548EE00A53494 /* RMMYProjectUI.m in Sources */,
+				7C5BA4A2211572DE00A53494 /* KDCustombutton.m in Sources */,
+				7C5BA4A1211572DE00A53494 /* UIView+Masonry.m in Sources */,
+				7C5BA49C211572DE00A53494 /* UILabel+Masonry.m in Sources */,
+				7C5BA49E211572DE00A53494 /* UITextField+Masonry.m in Sources */,
+				7C5BA4A92115746700A53494 /* UIFont+Additions.m in Sources */,
 				7C5BA44E211548D900A53494 /* main.m in Sources */,
+				7C5BA484211548EE00A53494 /* RMMyProjectViewModel.m in Sources */,
+				7C5BA4A5211573C500A53494 /* UIColor+Additions.m in Sources */,
+				7C5BA487211548EE00A53494 /* RMMyProjectTopView.m in Sources */,
+				7C5BA49F211572DE00A53494 /* UIScrollView+Masonry.m in Sources */,
 				7C5BA440211548D800A53494 /* AppDelegate.m in Sources */,
+				7C5BA4A0211572DE00A53494 /* UIButton+Masonry.m in Sources */,
+				7C5BA49D211572DE00A53494 /* UIImageView+Masonry.m in Sources */,
+				7C5BA48C2115492600A53494 /* RMGroupShadowTableView.m in Sources */,
+				7C5BA489211548EE00A53494 /* RMMyProjectController.m in Sources */,
+				7C5BA485211548EE00A53494 /* RMMyProjectEntity.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -431,9 +630,11 @@
 		};
 		7C5BA468211548D900A53494 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BD1AC7C9863F5301BCA549A4 /* Pods-groupTableView.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = /Users/stellasun/Desktop/groupTableView/groupTableView/PrefixHeader.pch;
 				INFOPLIST_FILE = groupTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -447,9 +648,11 @@
 		};
 		7C5BA469211548D900A53494 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 3991E1000760EE797495236B /* Pods-groupTableView.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PREFIX_HEADER = /Users/stellasun/Desktop/groupTableView/groupTableView/PrefixHeader.pch;
 				INFOPLIST_FILE = groupTableView/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
