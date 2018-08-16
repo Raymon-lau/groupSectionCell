@@ -14,8 +14,13 @@
 #import "UIButton+Masonry.h"
 #import "UIImageView+Masonry.h"
 #import "UIView+Masonry.h"
+#import <GoogleMobileAds/GoogleMobileAds.h>
+
 
 #define IOS9 ([[[UIDevice currentDevice]systemVersion]doubleValue]>=9.0)
 #define WEAKSELF __weak typeof(self) weakSelf = self;
 #define STRONGSELF __strong typeof(weakSelf) strongSelf = weakSelf;
 #define iPhoneX CGSizeEqualToSize(CGSizeMake(375, 812), [[UIScreen mainScreen] bounds].size)
+#define MYGoogleAdsId @"ca-app-pub-3565299002293805~4865598856"
+#define ADHORIZONTALID @"ca-app-pub-3565299002293805/3207643075"
+#define ADPAGEID @"ca-app-pub-3565299002293805/1523435437"

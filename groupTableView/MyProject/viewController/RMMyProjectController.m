@@ -18,7 +18,7 @@
 
 
 CGFloat const kMyProjectTopViewheight = 150;
-@interface RMMYProjectController ()
+@interface RMMYProjectController ()<GADInterstitialDelegate, GADBannerViewDelegate, RMMYProjectUIDelegate>
 // tableview1
 @property (nonatomic, strong) RMGroupShadowTableView *leftTableView;
 // tableview2
@@ -49,6 +49,8 @@ CGFloat const kMyProjectTopViewheight = 150;
 @property (nonatomic, strong) UILabel *hasCapital;
 // detail
 @property (nonatomic, strong) UILabel *hasInterest;
+@property (nonatomic, strong) GADInterstitial *interstitial;
+@property (nonatomic, strong) GADBannerView *adsView;
 @end
 
 @implementation RMMYProjectController
@@ -59,8 +61,27 @@ CGFloat const kMyProjectTopViewheight = 150;
     self.title = @"我的项目";
     self.view.backgroundColor = [UIColor cyanColor];
     [self creatUI];
+    [self configADS];
 }
 
+- (void)configADS{
+    self.adsView.adUnitID = ADHORIZONTALID;
+    self.adsView.rootViewController = self;
+    GADRequest *request = [GADRequest request];
+    [self.adsView loadRequest:request];
+    
+    self.interstitial = [self createAndLoadInterstitial];
+    
+    [self.interstitial loadRequest:request];
+}
+
+- (GADInterstitial *)createAndLoadInterstitial{
+    GADInterstitial *interstitial =
+    [[GADInterstitial alloc] initWithAdUnitID:ADPAGEID];
+    interstitial.delegate = self;
+    [interstitial loadRequest:[GADRequest request]];
+    return interstitial;
+}
 #pragma mark - UI
 - (void)creatUI{
     [self.view addSubview:self.leftTableView];
@@ -289,6 +310,15 @@ CGFloat const kMyProjectTopViewheight = 150;
     return headerView;
 }
 
+- (UIView *)tableFooterView{
+    UIView *footerView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, [UIScreen mainScreen].bounds.size.width, 100)];
+    self.adsView = [[GADBannerView alloc] initWithAdSize:GADAdSizeFromCGSize(CGSizeMake([UIScreen mainScreen].bounds.size.width - 40, 80)) origin:CGPointMake(20, 10)];
+    self.adsView.backgroundColor = [UIColor redColor];
+    self.adsView.delegate = self;
+    [footerView addSubview:self.adsView];
+    return footerView;
+}
+
 - (void)didInLoanButton{
     self.leftTableView.hidden = NO;
     self.rightTableView.hidden = YES;
@@ -402,6 +432,49 @@ CGFloat const kMyProjectTopViewheight = 150;
     [self.leftTableView.mj_footer endRefreshingWithNoMoreData];
 }
 
+#pragma makr - Delegate
+- (void)interstitialDidDismissScreen:(GADInterstitial *)ad{
+    self.interstitial = [self createAndLoadInterstitial];
+}
+
+- (void)didSelectTableRowAtIndexPath:(NSIndexPath *)indexPath{
+    if ([self.interstitial isReady]) {
+        [self.interstitial presentFromRootViewController:self];
+    }
+}
+
+/// Tells the delegate an ad request loaded an ad.
+- (void)adViewDidReceiveAd:(GADBannerView *)adView {
+    NSLog(@"adViewDidReceiveAd");
+}
+
+/// Tells the delegate an ad request failed.
+- (void)adView:(GADBannerView *)adView
+didFailToReceiveAdWithError:(GADRequestError *)error {
+    NSLog(@"adView:didFailToReceiveAdWithError: %@", [error localizedDescription]);
+}
+
+/// Tells the delegate that a full-screen view will be presented in response
+/// to the user clicking on an ad.
+- (void)adViewWillPresentScreen:(GADBannerView *)adView {
+    NSLog(@"adViewWillPresentScreen");
+}
+
+/// Tells the delegate that the full-screen view will be dismissed.
+- (void)adViewWillDismissScreen:(GADBannerView *)adView {
+    NSLog(@"adViewWillDismissScreen");
+}
+
+/// Tells the delegate that the full-screen view has been dismissed.
+- (void)adViewDidDismissScreen:(GADBannerView *)adView {
+    NSLog(@"adViewDidDismissScreen");
+}
+
+/// Tells the delegate that a user click will open another app (such as
+/// the App Store), backgrounding the current app.
+- (void)adViewWillLeaveApplication:(GADBannerView *)adView {
+    NSLog(@"adViewWillLeaveApplication");
+}
 #pragma mark - lazyLoading
 - (RMGroupShadowTableView *)leftTableView{
     if (!_leftTableView) {
@@ -413,6 +486,7 @@ CGFloat const kMyProjectTopViewheight = 150;
         _leftTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _leftTableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
         _leftTableView.tableHeaderView = [self inLoanTableHeaderView];
+        _leftTableView.tableFooterView = [self tableFooterView];
         _leftTableView.showsVerticalScrollIndicator = NO;
         _leftTableView.mj_header = [MJRefreshNormalHeader headerWithRefreshingBlock:^{
             NSLog(@"aaa");
@@ -436,7 +510,8 @@ CGFloat const kMyProjectTopViewheight = 150;
         _rightTableView.showSeparator = NO;
         _rightTableView.separatorStyle = UITableViewCellSeparatorStyleNone;
         _rightTableView.backgroundColor = [UIColor groupTableViewBackgroundColor];
-        _rightTableView.tableHeaderView = [self hasEndedTableHeaderView];
+//        _rightTableView.tableHeaderView = [self hasEndedTableHeaderView];
+        _rightTableView.tableHeaderView = [self tableFooterView];
         _rightTableView.showsVerticalScrollIndicator = NO;
     }
     return _rightTableView;
@@ -455,6 +530,7 @@ CGFloat const kMyProjectTopViewheight = 150;
         _myProjectUI.viewModel = self.viewModel;
         _myProjectUI.leftTableView = self.leftTableView;
         _myProjectUI.rightTableView = self.rightTableView;
+        _myProjectUI.projectDelegate = self;
     }
     return _myProjectUI;
 }

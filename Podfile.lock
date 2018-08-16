@@ -1,20 +1,24 @@
 PODS:
+  - Google-Mobile-Ads-SDK (7.31.0)
   - Masonry (1.1.0)
   - MJRefresh (3.1.15.3)
 
 DEPENDENCIES:
+  - Google-Mobile-Ads-SDK
   - Masonry (~> 1.1.0)
   - MJRefresh (~> 3.1.15.3)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - Google-Mobile-Ads-SDK
     - Masonry
     - MJRefresh
 
 SPEC CHECKSUMS:
+  Google-Mobile-Ads-SDK: 6e529e748b45507a2ca904e0b5a52669ba3920c4
   Masonry: 678fab65091a9290e40e2832a55e7ab731aad201
   MJRefresh: b48380ae2b927b46c4ef000de9adb8dc748e1df7
 
-PODFILE CHECKSUM: 78035edb3704617a5434784c355b81e72b92f251
+PODFILE CHECKSUM: d4e703664dd0d787de60a1c8e8cf4e6971c03dcc
 
 COCOAPODS: 1.5.3

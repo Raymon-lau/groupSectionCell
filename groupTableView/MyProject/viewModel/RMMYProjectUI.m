@@ -14,11 +14,11 @@
 @implementation RMMYProjectUI
 
 - (NSInteger)numberOfSectionsInRMGroupShadowTableView:(RMGroupShadowTableView *)tableView{
-    return 7;
+    return 3;
 }
 
 - (NSInteger)RMGroupShadowTableView:(RMGroupShadowTableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    return 3;
+    return 2;
 }
 
 - (UITableViewCell *)RMGroupShadowTableView:(RMGroupShadowTableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
@@ -37,6 +37,13 @@
 
 - (void)configCellWith:(UITableViewCell *)cell indexPath:(NSIndexPath *)indexPath{
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    cell.contentView.backgroundColor = [UIColor whiteColor];
+}
+
+- (void)RMGroupShadowTableView:(RMGroupShadowTableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    if (self.projectDelegate && [self.projectDelegate respondsToSelector:@selector(didSelectTableRowAtIndexPath:)]) {
+        [self.projectDelegate didSelectTableRowAtIndexPath:indexPath];
+    }
 }
 
 - (CGFloat)RMGroupShadowTableView:(RMGroupShadowTableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{

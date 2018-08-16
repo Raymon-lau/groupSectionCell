@@ -19,12 +19,18 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     // Override point for customization after application launch.
 
-    AppDelegate *newDelegate = [[UIApplication sharedApplication] delegate];
+    [self configGoogleADS];
+
+    UIWindow *window = [[UIApplication sharedApplication] delegate].window;
     RMMYProjectController *vc = [[RMMYProjectController alloc] init];
-    newDelegate.window.rootViewController = vc;
-    [newDelegate.window makeKeyAndVisible];
+    window.rootViewController = vc;
+    [window makeKeyAndVisible];
     
     return YES;
+}
+
+- (void)configGoogleADS{
+    [GADMobileAds configureWithApplicationID:MYGoogleAdsId];
 }
 
 
